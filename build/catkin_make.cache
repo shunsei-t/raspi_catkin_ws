@@ -1,0 +1,2 @@
+laser_geometry:ros_lecture/basic_lecture:ros_to_rosbridge:rplidar_ros:scan_filter
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catkin_ws/install -G Unix Makefiles
