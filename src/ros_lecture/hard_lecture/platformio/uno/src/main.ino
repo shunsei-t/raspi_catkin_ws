@@ -1,7 +1,8 @@
 #include <ros.h>
 #include <std_msgs/Int16.h>
-#define PULSE_A 2
-#define PULSE_B 3
+#define MA_PULSE_A 5
+#define MA_PULSE_B 3
+#define MB_PULSE_A
 
 ros::NodeHandle  nh;
 std_msgs::Int16 int_msg;
@@ -26,12 +27,20 @@ void loop()
 }
 
 void callbask(void) {  
-  if((digitalRead(PULSE_A) == true) && (digitalRead(PULSE_B) == false)) {
+  if     ((digitalRead(PULSE_A) == true) && (digitalRead(PULSE_B) == true)) {
     count++;
     row_count.publish( &int_msg );
   }
-  else if((digitalRead(PULSE_A) == true) && (digitalRead(PULSE_B) == true)) {
+  else if((digitalRead(PULSE_A) == true) && (digitalRead(PULSE_B) == false)) {
     count--;
+    row_count.publish( &int_msg );
+  }
+  else if((digitalRead(PULSE_A) == false) && (digitalRead(PULSE_B) == true)) {
+    count--;
+    row_count.publish( &int_msg );
+  }
+  else if((digitalRead(PULSE_A) == false) && (digitalRead(PULSE_B) == false)) {
+    count++;
     row_count.publish( &int_msg );
   }
 }
