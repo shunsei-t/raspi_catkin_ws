@@ -7,14 +7,17 @@
 
 ros::NodeHandle  nh;
 std_msgs::Int32MultiArray array_msg;
-ros::Publisher row_count("row_count_MA", &array_msg);
+ros::Publisher row_count("row_count", &array_msg);
 
-int count[2] = 0;
+long int count[2] = {0};
 
 void setup()
 {
   nh.initNode();
   nh.advertise(row_count);
+  array_msg.data = (long int*)malloc(sizeof(int)*2);
+
+  array_msg.data_length = 2;
 
   pinMode(PULSE_MA_A, INPUT);
   pinMode(PULSE_MA_B, INPUT);
