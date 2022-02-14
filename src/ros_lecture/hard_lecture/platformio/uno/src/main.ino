@@ -1,6 +1,6 @@
 #include <ros.h>
 #include <std_msgs/Int32MultiArray.h>
-#include <geometry_msdgs/Twist.h>
+#include <geometry_msgs/Twist.h>
 
 #define STATE 11
 #define PWM_A 10
@@ -70,7 +70,7 @@ void loop()
     digitalWrite(AIN_1, HIGH);
     digitalWrite(AIN_2, LOW);
   }
-  else if (power[0] = 0)
+  else if (power[0] == 0)
   {
     digitalWrite(AIN_1, LOW);
     digitalWrite(AIN_2, LOW);
@@ -86,7 +86,7 @@ void loop()
     digitalWrite(BIN_1, LOW);
     digitalWrite(BIN_2, HIGH);
   }
-  else if (power[1] = 0)
+  else if (power[1] == 0)
   {
     digitalWrite(BIN_1, LOW);
     digitalWrite(BIN_2, LOW);
