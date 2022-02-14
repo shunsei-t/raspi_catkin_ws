@@ -427,6 +427,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+hard_lecture_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/ros_lecture/hard_lecture
+
+//Value Computed by CMake
+hard_lecture_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/ros_lecture/hard_lecture
+
+//Value Computed by CMake
 laser_geometry_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/laser_geometry
 
 //Dependencies for the target
@@ -657,7 +663,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

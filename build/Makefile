@@ -701,303 +701,30 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_cpp
+# Target rules for targets named hard_serialport_retry
 
 # Build rule for target.
-tf2_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
-.PHONY : tf2_msgs_generate_messages_cpp
+hard_serialport_retry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hard_serialport_retry
+.PHONY : hard_serialport_retry
 
 # fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make laser_geometry/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
+hard_serialport_retry/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/hard_serialport_retry.dir/build.make ros_lecture/hard_lecture/CMakeFiles/hard_serialport_retry.dir/build
+.PHONY : hard_serialport_retry/fast
 
 #=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_eus
+# Target rules for targets named hard_serialport
 
 # Build rule for target.
-actionlib_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
-.PHONY : actionlib_msgs_generate_messages_eus
+hard_serialport: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hard_serialport
+.PHONY : hard_serialport
 
 # fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_py
-
-# Build rule for target.
-actionlib_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_generate_messages_py.dir/build.make laser_geometry/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_laser_geometry_gtest
-
-# Build rule for target.
-run_tests_laser_geometry_gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_gtest
-.PHONY : run_tests_laser_geometry_gtest
-
-# fast build rule for target.
-run_tests_laser_geometry_gtest/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest.dir/build
-.PHONY : run_tests_laser_geometry_gtest/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_nodejs
-
-# Build rule for target.
-actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
-.PHONY : actionlib_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_py
-
-# Build rule for target.
-tf_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf_generate_messages_py.dir/build.make laser_geometry/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_lisp
-
-# Build rule for target.
-actionlib_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make laser_geometry/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_laser_geometry_nosetests
-
-# Build rule for target.
-run_tests_laser_geometry_nosetests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_nosetests
-.PHONY : run_tests_laser_geometry_nosetests
-
-# fast build rule for target.
-run_tests_laser_geometry_nosetests/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests.dir/build
-.PHONY : run_tests_laser_geometry_nosetests/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_eus
-
-# Build rule for target.
-actionlib_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
-.PHONY : actionlib_generate_messages_eus
-
-# fast build rule for target.
-actionlib_generate_messages_eus/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_generate_messages_eus.dir/build.make laser_geometry/CMakeFiles/actionlib_generate_messages_eus.dir/build
-.PHONY : actionlib_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_laser_geometry
-
-# Build rule for target.
-run_tests_laser_geometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry
-.PHONY : run_tests_laser_geometry
-
-# fast build rule for target.
-run_tests_laser_geometry/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry.dir/build
-.PHONY : run_tests_laser_geometry/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_cpp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_cpp
-
-# Build rule for target.
-tf_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf_generate_messages_cpp.dir/build.make laser_geometry/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_py
-
-# Build rule for target.
-actionlib_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_lisp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make laser_geometry/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_laser_geometry_nosetests
-
-# Build rule for target.
-_run_tests_laser_geometry_nosetests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_nosetests
-.PHONY : _run_tests_laser_geometry_nosetests
-
-# fast build rule for target.
-_run_tests_laser_geometry_nosetests/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests.dir/build
-.PHONY : _run_tests_laser_geometry_nosetests/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf_generate_messages_lisp.dir/build.make laser_geometry/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_eus
-
-# Build rule for target.
-tf2_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make laser_geometry/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_eus
-
-# Build rule for target.
-tf_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
-.PHONY : tf_generate_messages_eus
-
-# fast build rule for target.
-tf_generate_messages_eus/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf_generate_messages_eus.dir/build.make laser_geometry/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_laser_geometry_nosetests_test.projection_test.py
-
-# Build rule for target.
-_run_tests_laser_geometry_nosetests_test.projection_test.py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_nosetests_test.projection_test.py
-.PHONY : _run_tests_laser_geometry_nosetests_test.projection_test.py
-
-# fast build rule for target.
-_run_tests_laser_geometry_nosetests_test.projection_test.py/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build
-.PHONY : _run_tests_laser_geometry_nosetests_test.projection_test.py/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_nodejs
-
-# Build rule for target.
-tf_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf_generate_messages_nodejs.dir/build.make laser_geometry/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_nodejs
-
-# Build rule for target.
-tf2_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
-.PHONY : tf2_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make laser_geometry/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named clean_test_results_laser_geometry
-
-# Build rule for target.
-clean_test_results_laser_geometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_laser_geometry
-.PHONY : clean_test_results_laser_geometry
-
-# fast build rule for target.
-clean_test_results_laser_geometry/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/clean_test_results_laser_geometry.dir/build.make laser_geometry/CMakeFiles/clean_test_results_laser_geometry.dir/build
-.PHONY : clean_test_results_laser_geometry/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_lisp
-
-# Build rule for target.
-tf2_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make laser_geometry/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
+hard_serialport/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/hard_serialport.dir/build.make ros_lecture/hard_lecture/CMakeFiles/hard_serialport.dir/build
+.PHONY : hard_serialport/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_py
@@ -1009,34 +736,255 @@ tf2_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make laser_geometry/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named laser_geometry
+# Target rules for targets named tf2_msgs_generate_messages_lisp
 
 # Build rule for target.
-laser_geometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 laser_geometry
-.PHONY : laser_geometry
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
 
 # fast build rule for target.
-laser_geometry/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/laser_geometry.dir/build.make laser_geometry/CMakeFiles/laser_geometry.dir/build
-.PHONY : laser_geometry/fast
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named _run_tests_laser_geometry
+# Target rules for targets named tf2_msgs_generate_messages_nodejs
 
 # Build rule for target.
-_run_tests_laser_geometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry
-.PHONY : _run_tests_laser_geometry
+tf2_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
+.PHONY : tf2_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-_run_tests_laser_geometry/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry.dir/build
-.PHONY : _run_tests_laser_geometry/fast
+tf2_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_nodejs
+
+# Build rule for target.
+tf_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_nodejs.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
+
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_lisp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_py
+
+# Build rule for target.
+actionlib_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_cpp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_eus
+
+# Build rule for target.
+tf_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_eus.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
+
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_eus.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_py.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_py.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
+
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named _run_tests_laser_geometry_gtest
@@ -1052,43 +1000,43 @@ _run_tests_laser_geometry_gtest/fast:
 .PHONY : _run_tests_laser_geometry_gtest/fast
 
 #=============================================================================
-# Target rules for targets named run_tests_laser_geometry_gtest_projection_test
+# Target rules for targets named _run_tests_laser_geometry
 
 # Build rule for target.
-run_tests_laser_geometry_gtest_projection_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_gtest_projection_test
-.PHONY : run_tests_laser_geometry_gtest_projection_test
+_run_tests_laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry
+.PHONY : _run_tests_laser_geometry
 
 # fast build rule for target.
-run_tests_laser_geometry_gtest_projection_test/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest_projection_test.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest_projection_test.dir/build
-.PHONY : run_tests_laser_geometry_gtest_projection_test/fast
+_run_tests_laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry.dir/build
+.PHONY : _run_tests_laser_geometry/fast
 
 #=============================================================================
-# Target rules for targets named projection_test
+# Target rules for targets named laser_geometry
 
 # Build rule for target.
-projection_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 projection_test
-.PHONY : projection_test
+laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laser_geometry
+.PHONY : laser_geometry
 
 # fast build rule for target.
-projection_test/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/projection_test.dir/build.make laser_geometry/CMakeFiles/projection_test.dir/build
-.PHONY : projection_test/fast
+laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/laser_geometry.dir/build.make laser_geometry/CMakeFiles/laser_geometry.dir/build
+.PHONY : laser_geometry/fast
 
 #=============================================================================
-# Target rules for targets named _run_tests_laser_geometry_gtest_projection_test
+# Target rules for targets named _run_tests_laser_geometry_nosetests
 
 # Build rule for target.
-_run_tests_laser_geometry_gtest_projection_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_gtest_projection_test
-.PHONY : _run_tests_laser_geometry_gtest_projection_test
+_run_tests_laser_geometry_nosetests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_nosetests
+.PHONY : _run_tests_laser_geometry_nosetests
 
 # fast build rule for target.
-_run_tests_laser_geometry_gtest_projection_test/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test.dir/build
-.PHONY : _run_tests_laser_geometry_gtest_projection_test/fast
+_run_tests_laser_geometry_nosetests/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests.dir/build
+.PHONY : _run_tests_laser_geometry_nosetests/fast
 
 #=============================================================================
 # Target rules for targets named run_tests_laser_geometry_nosetests_test.projection_test.py
@@ -1104,30 +1052,108 @@ run_tests_laser_geometry_nosetests_test.projection_test.py/fast:
 .PHONY : run_tests_laser_geometry_nosetests_test.projection_test.py/fast
 
 #=============================================================================
-# Target rules for targets named actionlib_generate_messages_nodejs
+# Target rules for targets named run_tests_laser_geometry
 
 # Build rule for target.
-actionlib_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
-.PHONY : actionlib_generate_messages_nodejs
+run_tests_laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry
+.PHONY : run_tests_laser_geometry
 
 # fast build rule for target.
-actionlib_generate_messages_nodejs/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make laser_geometry/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
-.PHONY : actionlib_generate_messages_nodejs/fast
+run_tests_laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry.dir/build
+.PHONY : run_tests_laser_geometry/fast
 
 #=============================================================================
-# Target rules for targets named actionlib_generate_messages_cpp
+# Target rules for targets named run_tests_laser_geometry_gtest
 
 # Build rule for target.
-actionlib_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
-.PHONY : actionlib_generate_messages_cpp
+run_tests_laser_geometry_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_gtest
+.PHONY : run_tests_laser_geometry_gtest
 
 # fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	$(MAKE) -f laser_geometry/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make laser_geometry/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
+run_tests_laser_geometry_gtest/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest.dir/build
+.PHONY : run_tests_laser_geometry_gtest/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_laser_geometry_gtest_projection_test
+
+# Build rule for target.
+_run_tests_laser_geometry_gtest_projection_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_gtest_projection_test
+.PHONY : _run_tests_laser_geometry_gtest_projection_test
+
+# fast build rule for target.
+_run_tests_laser_geometry_gtest_projection_test/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test.dir/build
+.PHONY : _run_tests_laser_geometry_gtest_projection_test/fast
+
+#=============================================================================
+# Target rules for targets named projection_test
+
+# Build rule for target.
+projection_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 projection_test
+.PHONY : projection_test
+
+# fast build rule for target.
+projection_test/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/projection_test.dir/build.make laser_geometry/CMakeFiles/projection_test.dir/build
+.PHONY : projection_test/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry_gtest_projection_test
+
+# Build rule for target.
+run_tests_laser_geometry_gtest_projection_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_gtest_projection_test
+.PHONY : run_tests_laser_geometry_gtest_projection_test
+
+# fast build rule for target.
+run_tests_laser_geometry_gtest_projection_test/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest_projection_test.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest_projection_test.dir/build
+.PHONY : run_tests_laser_geometry_gtest_projection_test/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry_nosetests
+
+# Build rule for target.
+run_tests_laser_geometry_nosetests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_nosetests
+.PHONY : run_tests_laser_geometry_nosetests
+
+# fast build rule for target.
+run_tests_laser_geometry_nosetests/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests.dir/build
+.PHONY : run_tests_laser_geometry_nosetests/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_laser_geometry
+
+# Build rule for target.
+clean_test_results_laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_laser_geometry
+.PHONY : clean_test_results_laser_geometry
+
+# fast build rule for target.
+clean_test_results_laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/clean_test_results_laser_geometry.dir/build.make laser_geometry/CMakeFiles/clean_test_results_laser_geometry.dir/build
+.PHONY : clean_test_results_laser_geometry/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_laser_geometry_nosetests_test.projection_test.py
+
+# Build rule for target.
+_run_tests_laser_geometry_nosetests_test.projection_test.py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_nosetests_test.projection_test.py
+.PHONY : _run_tests_laser_geometry_nosetests_test.projection_test.py
+
+# fast build rule for target.
+_run_tests_laser_geometry_nosetests_test.projection_test.py/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build
+.PHONY : _run_tests_laser_geometry_nosetests_test.projection_test.py/fast
 
 # Help Target
 help:
@@ -1183,39 +1209,41 @@ help:
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... run_tests_laser_geometry_gtest"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... tf_generate_messages_py"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... run_tests_laser_geometry_nosetests"
-	@echo "... actionlib_generate_messages_eus"
-	@echo "... run_tests_laser_geometry"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... _run_tests_laser_geometry_nosetests"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... tf_generate_messages_eus"
-	@echo "... _run_tests_laser_geometry_nosetests_test.projection_test.py"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... tf2_msgs_generate_messages_nodejs"
-	@echo "... clean_test_results_laser_geometry"
-	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... hard_serialport_retry"
+	@echo "... hard_serialport"
 	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... laser_geometry"
-	@echo "... _run_tests_laser_geometry"
-	@echo "... _run_tests_laser_geometry_gtest"
-	@echo "... run_tests_laser_geometry_gtest_projection_test"
-	@echo "... projection_test"
-	@echo "... _run_tests_laser_geometry_gtest_projection_test"
-	@echo "... run_tests_laser_geometry_nosetests_test.projection_test.py"
-	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... tf_generate_messages_eus"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... tf_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... _run_tests_laser_geometry_gtest"
+	@echo "... _run_tests_laser_geometry"
+	@echo "... laser_geometry"
+	@echo "... _run_tests_laser_geometry_nosetests"
+	@echo "... run_tests_laser_geometry_nosetests_test.projection_test.py"
+	@echo "... run_tests_laser_geometry"
+	@echo "... run_tests_laser_geometry_gtest"
+	@echo "... _run_tests_laser_geometry_gtest_projection_test"
+	@echo "... projection_test"
+	@echo "... run_tests_laser_geometry_gtest_projection_test"
+	@echo "... run_tests_laser_geometry_nosetests"
+	@echo "... clean_test_results_laser_geometry"
+	@echo "... _run_tests_laser_geometry_nosetests_test.projection_test.py"
 .PHONY : help
 
 
