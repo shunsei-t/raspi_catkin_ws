@@ -433,6 +433,12 @@ hard_lecture_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/ros_lecture/hard_lec
 hard_lecture_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/ros_lecture/hard_lecture
 
 //Value Computed by CMake
+imu_tutorial_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/mpu6050
+
+//Value Computed by CMake
+imu_tutorial_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/mpu6050
+
+//Value Computed by CMake
 laser_geometry_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/laser_geometry
 
 //Dependencies for the target
@@ -452,6 +458,12 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
+
+//Value Computed by CMake
+mpu6050_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/mpu6050
+
+//Value Computed by CMake
+mpu6050_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/mpu6050
 
 //Value Computed by CMake
 ros_to_rosbridge_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/ros_to_rosbridge
@@ -663,7 +675,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

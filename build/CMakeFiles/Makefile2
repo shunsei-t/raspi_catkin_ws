@@ -2318,6 +2318,24 @@ clean: ros_lecture/hard_lecture/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/cl
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory mpu6050
+
+# Convenience name for "all" pass in the directory.
+mpu6050/all:
+
+.PHONY : mpu6050/all
+
+# Convenience name for "clean" pass in the directory.
+mpu6050/clean:
+
+.PHONY : mpu6050/clean
+
+# Convenience name for "preinstall" pass in the directory.
+mpu6050/preinstall:
+
+.PHONY : mpu6050/preinstall
+
+#=============================================================================
 # Directory level rules for directory laser_geometry
 
 # Convenience name for "all" pass in the directory.

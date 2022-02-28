@@ -16,6 +16,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "laser_geometry/catkin_generated/ordered_paths.cmake"
   "laser_geometry/catkin_generated/package.cmake"
   "laser_geometry/catkin_generated/setup_py_interrogation.cmake"
+  "mpu6050/catkin_generated/ordered_paths.cmake"
+  "mpu6050/catkin_generated/package.cmake"
   "ros_lecture/basic_lecture/catkin_generated/ordered_paths.cmake"
   "ros_lecture/basic_lecture/catkin_generated/package.cmake"
   "ros_lecture/hard_lecture/catkin_generated/ordered_paths.cmake"
@@ -29,6 +31,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ubuntu/catkin_ws/src/laser_geometry/CMakeLists.txt"
   "/home/ubuntu/catkin_ws/src/laser_geometry/package.xml"
   "/home/ubuntu/catkin_ws/src/laser_geometry/setup.py"
+  "/home/ubuntu/catkin_ws/src/mpu6050/CMakeLists.txt"
+  "/home/ubuntu/catkin_ws/src/mpu6050/package.xml"
   "/home/ubuntu/catkin_ws/src/ros_lecture/basic_lecture/CMakeLists.txt"
   "/home/ubuntu/catkin_ws/src/ros_lecture/basic_lecture/package.xml"
   "/home/ubuntu/catkin_ws/src/ros_lecture/hard_lecture/CMakeLists.txt"
@@ -263,6 +267,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "rplidar_ros/CMakeFiles/CMakeDirectoryInformation.cmake"
   "scan_filter/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ros_lecture/hard_lecture/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "mpu6050/CMakeFiles/CMakeDirectoryInformation.cmake"
   "laser_geometry/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

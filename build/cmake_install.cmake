@@ -136,6 +136,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ubuntu/catkin_ws/build/rplidar_ros/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/scan_filter/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/ros_lecture/hard_lecture/cmake_install.cmake")
+  include("/home/ubuntu/catkin_ws/build/mpu6050/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/laser_geometry/cmake_install.cmake")
 
 endif()

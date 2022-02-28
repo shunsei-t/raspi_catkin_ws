@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/install
+
+Name: mpu6050
+Description: Description of mpu6050
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -24,13 +24,11 @@ int power[2] = {0}; //A, B
 
 void motor_callback(const geometry_msgs::Twist& cmd_vel)
 {
-  power[0] = cmd_vel.linear.x * 25;
-  power[1] = cmd_vel.linear.x * 25;
-  power[0] = cmd_vel.angular.z * 10;
-  power[1] = cmd_vel.angular.z * (-10);
+  power[0] = (int)(cmd_vel.linear.x * 20 + cmd_vel.angular.z * 10);
+  power[1] = (int)(cmd_vel.linear.x * 20 + cmd_vel.angular.z * (-10));
 }
 
-ros::Subscriber<geometry_msgs::Twist> sub0("cmd_vel", &motor_callback);
+ros::Subscriber<geometry_msgs::Twist> sub0("turtle1/cmd_vel", &motor_callback);
 
 void setup()
 {
@@ -83,8 +81,8 @@ void loop()
   
   if (power[1] > 0)
   {
-    digitalWrite(BIN_1, LOW);
-    digitalWrite(BIN_2, HIGH);
+    digitalWrite(BIN_1, HIGH);
+    digitalWrite(BIN_2, LOW);
   }
   else if (power[1] == 0)
   {
@@ -93,14 +91,16 @@ void loop()
   }
   else if (power[1] < 0)
   {
-    digitalWrite(BIN_1, HIGH);
-    digitalWrite(BIN_2, LOW);
+    digitalWrite(BIN_1, LOW);
+    digitalWrite(BIN_2, HIGH);
   }
 
-  analogWrite(PWM_A, power[0]);
-  analogWrite(PWM_B, power[1]);
+  analogWrite(PWM_A, abs(power[0]));
+  analogWrite(PWM_B, abs(power[1]));
 
   nh.spinOnce();
+
+  delay(100);
 }
 
 void callback_MA(void) {  
