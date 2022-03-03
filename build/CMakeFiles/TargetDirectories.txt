@@ -61,6 +61,13 @@
 /home/ubuntu/catkin_ws/build/ros_lecture/basic_lecture/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/ubuntu/catkin_ws/build/ros_lecture/basic_lecture/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/ubuntu/catkin_ws/build/ros_lecture/basic_lecture/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/install/strip.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/edit_cache.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/list_install_components.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/test.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/install/local.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/catkin_ws/build/lego_slam/devices/CMakeFiles/install.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/install/strip.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/install/local.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/test.dir
