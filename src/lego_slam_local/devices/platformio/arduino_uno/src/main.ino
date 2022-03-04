@@ -1,6 +1,5 @@
 #include <ros.h>
 #include <std_msgs/Int32MultiArray.h>
-#include <geometry_msgs/Twist.h>
 
 #define STATE 11
 #define PWM_A 10
@@ -22,19 +21,19 @@ ros::Publisher row_count("row_count", &array_msg);
 long int count[2] = {0}; //A, B
 int power[2] = {0}; //A, B
 
-void motor_callback(const geometry_msgs::Twist& cmd_vel)
+void motor_callback(const std_msgs::Int32MultiArray& msg)
 {
-  power[0] = (int)(cmd_vel.linear.x * 20 + cmd_vel.angular.z * 10);
-  power[1] = (int)(cmd_vel.linear.x * 20 + cmd_vel.angular.z * (-10));
+  power[0] = msg.data[0];
+  power[1] = msg.data[1];
 }
 
-ros::Subscriber<geometry_msgs::Twist> sub0("turtle1/cmd_vel", &motor_callback);
+ros::Subscriber<std_msgs::Int32MultiArray> sub("row_power", &motor_callback);
 
 void setup()
 {
   nh.initNode();
   nh.advertise(row_count);
-  nh.subscribe(sub0);
+  nh.subscribe(sub);
 
   array_msg.data = (long int*)malloc(sizeof(int)*2); //array_msg.data.resizeが使えないのでこうする
   array_msg.data_length = 2;
@@ -95,8 +94,8 @@ void loop()
     digitalWrite(BIN_2, HIGH);
   }
 
-  analogWrite(PWM_A, abs(power[0]));
-  analogWrite(PWM_B, abs(power[1]));
+  analogWrite(PWM_A, constrain(abs(power[0]), 10, 200));
+  analogWrite(PWM_B, constrain(abs(power[1]), 10, 200));
 
   nh.spinOnce();
 
