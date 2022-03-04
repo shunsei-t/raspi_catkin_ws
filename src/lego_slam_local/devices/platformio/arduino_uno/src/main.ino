@@ -94,8 +94,8 @@ void loop()
     digitalWrite(BIN_2, HIGH);
   }
 
-  analogWrite(PWM_A, constrain(abs(power[0]), 10, 200));
-  analogWrite(PWM_B, constrain(abs(power[1]), 10, 200));
+  analogWrite(PWM_A, constrain(abs(power[0]), 20, 200));
+  analogWrite(PWM_B, constrain(abs(power[1]), 20, 200));
 
   nh.spinOnce();
 
