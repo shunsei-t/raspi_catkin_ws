@@ -94,12 +94,15 @@ void loop()
     digitalWrite(BIN_2, HIGH);
   }
 
-  analogWrite(PWM_A, constrain(abs(power[0]), 20, 200));
-  analogWrite(PWM_B, constrain(abs(power[1]), 20, 200));
+  analogWrite(PWM_A, constrain(abs(power[0]), 30, 200));
+  analogWrite(PWM_B, constrain(abs(power[1]), 30, 200));
+
+  //power[0] = 0;
+  //power[1] = 0;
 
   nh.spinOnce();
 
-  delay(100);
+  //delay(100);
 }
 
 void callback_MA(void) {  
