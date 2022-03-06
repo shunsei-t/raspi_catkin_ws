@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="_port" default="ttyACM0"/>
+    <node name="rosserial_python" pkg="rosserial_python" type="serial_node.py">
+        <param name="_port" value="'_port'"/>
+    </node>
+</launch>
