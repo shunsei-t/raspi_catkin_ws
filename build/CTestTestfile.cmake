@@ -6,7 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("ros_lecture/basic_lecture")
-subdirs("lego_slam/devices")
+subdirs("lego_slam_local/devices")
 subdirs("ros_to_rosbridge")
 subdirs("rplidar_ros")
 subdirs("scan_filter")

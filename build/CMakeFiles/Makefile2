@@ -1072,22 +1072,22 @@ clean: ros_lecture/basic_lecture/CMakeFiles/std_msgs_generate_messages_py.dir/cl
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory lego_slam/devices
+# Directory level rules for directory lego_slam_local/devices
 
 # Convenience name for "all" pass in the directory.
-lego_slam/devices/all:
+lego_slam_local/devices/all:
 
-.PHONY : lego_slam/devices/all
+.PHONY : lego_slam_local/devices/all
 
 # Convenience name for "clean" pass in the directory.
-lego_slam/devices/clean:
+lego_slam_local/devices/clean:
 
-.PHONY : lego_slam/devices/clean
+.PHONY : lego_slam_local/devices/clean
 
 # Convenience name for "preinstall" pass in the directory.
-lego_slam/devices/preinstall:
+lego_slam_local/devices/preinstall:
 
-.PHONY : lego_slam/devices/preinstall
+.PHONY : lego_slam_local/devices/preinstall
 
 #=============================================================================
 # Directory level rules for directory ros_to_rosbridge

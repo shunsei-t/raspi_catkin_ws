@@ -357,10 +357,10 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //Value Computed by CMake
-devices_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/lego_slam/devices
+devices_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/lego_slam_local/devices
 
 //Value Computed by CMake
-devices_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/lego_slam/devices
+devices_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/lego_slam_local/devices
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake

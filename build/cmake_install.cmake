@@ -132,7 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ubuntu/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/ros_lecture/basic_lecture/cmake_install.cmake")
-  include("/home/ubuntu/catkin_ws/build/lego_slam/devices/cmake_install.cmake")
+  include("/home/ubuntu/catkin_ws/build/lego_slam_local/devices/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/ros_to_rosbridge/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/rplidar_ros/cmake_install.cmake")
   include("/home/ubuntu/catkin_ws/build/scan_filter/cmake_install.cmake")

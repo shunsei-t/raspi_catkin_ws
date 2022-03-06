@@ -18,13 +18,18 @@ ros::NodeHandle  nh;
 std_msgs::Int32MultiArray array_msg;
 ros::Publisher row_count("row_count", &array_msg);
 
-long int count[2] = {0}; //A, B
-int power[2] = {0}; //A, B
+std_msgs::Int32MultiArray test_msg;
+ros::Publisher power_pub("power_pub", &test_msg);
+
+long int count[2] = {1000000, 1000000}; //A, B
+int power[2] = {0}; //A, B Int32MultiArrayなのでlon intが対応？
 
 void motor_callback(const std_msgs::Int32MultiArray& msg)
 {
-  power[0] = msg.data[0];
-  power[1] = msg.data[1];
+  power[0] = (int)(msg.data[0]);
+  power[1] = (int)(msg.data[1]);
+
+  //power_pub.publish( &test_msg );
 }
 
 ros::Subscriber<std_msgs::Int32MultiArray> sub("row_power", &motor_callback);
@@ -33,6 +38,7 @@ void setup()
 {
   nh.initNode();
   nh.advertise(row_count);
+  nh.advertise(power_pub);
   nh.subscribe(sub);
 
   array_msg.data = (long int*)malloc(sizeof(int)*2); //array_msg.data.resizeが使えないのでこうする
@@ -94,15 +100,15 @@ void loop()
     digitalWrite(BIN_2, HIGH);
   }
 
-  analogWrite(PWM_A, constrain(abs(power[0]), 30, 200));
-  analogWrite(PWM_B, constrain(abs(power[1]), 30, 200));
+  analogWrite(PWM_A, constrain(abs(power[0]), 55, 60));//poweerはlong int
+  analogWrite(PWM_B, constrain(abs(power[1]), 55, 60));
 
   //power[0] = 0;
   //power[1] = 0;
 
   nh.spinOnce();
 
-  //delay(100);
+  delay(100);
 }
 
 void callback_MA(void) {  
