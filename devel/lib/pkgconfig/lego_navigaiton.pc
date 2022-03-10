@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: lego_navigaiton
+Description: Description of lego_navigaiton
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

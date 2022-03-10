@@ -1090,6 +1090,24 @@ lego_slam_local/devices/preinstall:
 .PHONY : lego_slam_local/devices/preinstall
 
 #=============================================================================
+# Directory level rules for directory lego_slam_local/lego_navigaiton
+
+# Convenience name for "all" pass in the directory.
+lego_slam_local/lego_navigaiton/all:
+
+.PHONY : lego_slam_local/lego_navigaiton/all
+
+# Convenience name for "clean" pass in the directory.
+lego_slam_local/lego_navigaiton/clean:
+
+.PHONY : lego_slam_local/lego_navigaiton/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lego_slam_local/lego_navigaiton/preinstall:
+
+.PHONY : lego_slam_local/lego_navigaiton/preinstall
+
+#=============================================================================
 # Directory level rules for directory ros_to_rosbridge
 
 # Convenience name for "all" pass in the directory.
@@ -1138,6 +1156,24 @@ ros_to_rosbridge/CMakeFiles/_catkin_empty_exported_target.dir/clean:
 clean: ros_to_rosbridge/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory serial_stm32
+
+# Convenience name for "all" pass in the directory.
+serial_stm32/all:
+
+.PHONY : serial_stm32/all
+
+# Convenience name for "clean" pass in the directory.
+serial_stm32/clean:
+
+.PHONY : serial_stm32/clean
+
+# Convenience name for "preinstall" pass in the directory.
+serial_stm32/preinstall:
+
+.PHONY : serial_stm32/preinstall
 
 #=============================================================================
 # Directory level rules for directory rplidar_ros

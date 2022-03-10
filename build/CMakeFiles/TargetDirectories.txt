@@ -68,6 +68,13 @@
 /home/ubuntu/catkin_ws/build/lego_slam_local/devices/CMakeFiles/install/local.dir
 /home/ubuntu/catkin_ws/build/lego_slam_local/devices/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/catkin_ws/build/lego_slam_local/devices/CMakeFiles/install.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/install/strip.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/edit_cache.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/list_install_components.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/test.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/install/local.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton/CMakeFiles/install.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/install/strip.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/install/local.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/test.dir
@@ -76,6 +83,13 @@
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/_catkin_empty_exported_target.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/catkin_ws/build/ros_to_rosbridge/CMakeFiles/install.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/install/strip.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/edit_cache.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/list_install_components.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/test.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/install/local.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/catkin_ws/build/serial_stm32/CMakeFiles/install.dir
 /home/ubuntu/catkin_ws/build/rplidar_ros/CMakeFiles/install/strip.dir
 /home/ubuntu/catkin_ws/build/rplidar_ros/CMakeFiles/install/local.dir
 /home/ubuntu/catkin_ws/build/rplidar_ros/CMakeFiles/install.dir

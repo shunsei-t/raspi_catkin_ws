@@ -453,6 +453,12 @@ laser_geometry_LIB_DEPENDS:STATIC=general;/usr/lib/aarch64-linux-gnu/libboost_sy
 //Value Computed by CMake
 laser_geometry_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/laser_geometry
 
+//Value Computed by CMake
+lego_navigaiton_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/lego_slam_local/lego_navigaiton
+
+//Value Computed by CMake
+lego_navigaiton_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/lego_slam_local/lego_navigaiton
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libtf2.so
 
@@ -518,6 +524,18 @@ scan_filter_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/scan_filter
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+serial_STM32_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/serial_STM32
+
+//Value Computed by CMake
+serial_STM32_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/serial_STM32
+
+//Value Computed by CMake
+serial_stm32_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/serial_stm32
+
+//Value Computed by CMake
+serial_stm32_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/serial_stm32
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -681,7 +699,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
