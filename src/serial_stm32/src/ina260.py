@@ -14,22 +14,22 @@ import time
 import struct
 
 
-from std_msgs.msg import Float64
+from std_msgs.msg import Float32
 
 if __name__ == '__main__':
     try:
         rospy.init_node('ina260', anonymous=True)
         r = rospy.Rate(10)  
-        current = rospy.Publisher(
-            "current", Float64, queue_size=10)
-        voltage = rospy.Publisher(
-            "voltage", Float64, queue_size=10)
+        ina_current = rospy.Publisher(
+            "current", Float32, queue_size=10)
+        ina_voltage = rospy.Publisher(
+            "voltage", Float32, queue_size=10)
 
         # timeoutを秒で設定（default:None)ボーレートはデフォルトで9600
         ser = serial.Serial("/dev/ttyUSB0", 115200, timeout=3)
 
         rec_count = 0
-        rec_data = [0]*8
+        rec_data = [0]*4
         rec_flag = 0
 
 
@@ -41,27 +41,42 @@ if __name__ == '__main__':
             tmp = np.frombuffer(line, dtype=np.uint8)
             tmp = int(tmp)
             #print(tmp)
-            if tmp == 118:
-                rec_flag = 'v'
+            if   tmp == 118:#asciiのv
+                 rec_flag = 'v'
+            elif tmp == 105:
+                 rec_flag = 'i'
             elif rec_flag == 'v':
                 rec_data[rec_count] = tmp
-                print(tmp)
+                #print(tmp)
                 #print(rec_count)
                 rec_count += 1
-                if rec_count == 8:
+                if rec_count == 4:
                     rec_flag = 0
                     rec_count = 0
 
-                    current = float(rec_data[0] | rec_data[1] << 8 | rec_data[2] << 16 | rec_data[3] << 24 | rec_data[4] << 32 | rec_data[5] << 40 | rec_data[6] << 48 | rec_data[7] << 55)
+                    voltage = float(rec_data[0] | rec_data[1] << 8 | rec_data[2] << 16 | rec_data[3] << 24) / 1000
+                    #print("v")
+                    print(voltage)
 
+                    data1 = Float32()
+                    data1.data = voltage
+                    ina_voltage.publish(data1)
+            elif rec_flag == 'i':
+                rec_data[rec_count] = tmp
+                #print(tmp)
+                #print(rec_count)
+                rec_count += 1
+                if rec_count == 4:
+                    rec_flag = 0
+                    rec_count = 0
+
+                    current = float(rec_data[0] | rec_data[1] << 8 | rec_data[2] << 16 | rec_data[3] << 24) / 1000
+                    #print("i")
                     print(current)
 
-                    data1 = Float64()
-                    #current.publish(data1)
-
-                    data2 = Float64()
-                    voltage.publish(data2)
-
+                    data2 = Float32()
+                    data2.data = current
+                    ina_current.publish(data2)
 
     except rospy.ROSInterruptException:
         ser.close()
